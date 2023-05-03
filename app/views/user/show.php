@@ -155,7 +155,8 @@
 
         // Personal Information
         document.getElementById('gender').textContent = `Gender: ${user.gender}`;
-        document.getElementById('date_of_birth').textContent = `Date of Birth: ${user.date_of_birth || 'N/A'}`;
+        const date_of_birth = user.date_of_birth ? new Date(user.date_of_birth).toLocaleDateString() : 'N/A';
+        document.getElementById('date_of_birth').textContent = `Date of Birth: ${date_of_birth}`;
         document.getElementById('ni_number').textContent = `NI Number: ${user.ni_number || 'N/A'}`;
         document.getElementById('initials').textContent = `Initials: ${user.initials || 'N/A'}`;
 
