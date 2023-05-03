@@ -8,5 +8,6 @@
 ## Setup
 
 - Clone the repository: `git clone https://github.com/toby-rea/eden-tech-test.git`
-- Run `docker-compose up -d`
+- Enter the repository `cd eden-tech-test`
+- Initialise the containers using `docker-compose up -d`
 - Head over to `http://localhost` to test the application
